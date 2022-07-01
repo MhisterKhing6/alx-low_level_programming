@@ -7,12 +7,16 @@
 int main(void)
 {
 int start = 0;
-while (start < 9)
+while (start <= 9)
 {
-putchar(start++ + '0');
+putchar(start + '0');
+if (start != 9)
+{
 putchar(',');
 putchar(' ');
 }
-putchar(9 + '0');
+++start;
+}
+putchar('\n');
 return (0);
 }
