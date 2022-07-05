@@ -5,7 +5,7 @@
  * Return: 0
  * @c : integer to check abs value
 */
-int print_last_digit(int c);
+int print_last_digit(int c)
 {
 int l = c % 10;
 _putchar(c + '0');
