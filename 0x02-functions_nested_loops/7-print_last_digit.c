@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <stdlib.h>
 /**
  * print_last_digit- Print the absolute value of the number'
  * Return: 0
@@ -8,7 +9,7 @@
 int print_last_digit(int c)
 {
 int l;
-l = Math.abs(c % 10);
+l = abs(c % 10);
 _putchar(l + '0');
 return (l);
 }
