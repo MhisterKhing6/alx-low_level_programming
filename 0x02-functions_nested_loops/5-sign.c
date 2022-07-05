@@ -3,7 +3,8 @@
 /**
  * print_sign- Print the sign of a number'
  * Return: 0
- */
+ * @c : integer to check stat
+*/
 int print_sign(int c)
 {
 if (c > 0)
@@ -18,7 +19,7 @@ return (-1);
 }
 else
 {
-_putchar('0'); 
+_putchar('0');
 return (0);
 }
 }
