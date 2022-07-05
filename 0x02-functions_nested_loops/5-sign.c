@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * print_sign- Print the sign of a number'
- * return 0
+ * Return: 0
  */
 int print_sign(int c)
 {
@@ -18,7 +18,7 @@ return (-1);
 }
 else
 {
-_putchar(0); 
+_putchar('0'); 
 return (0);
 }
 }
