@@ -1,5 +1,5 @@
 #include <stdio.h>
-//#include <main.h>
+#include <main.h>
 /**
  * _islower - check if a string is lower and returns it'
  * @c : the character to check
