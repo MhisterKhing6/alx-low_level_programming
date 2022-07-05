@@ -13,12 +13,4 @@ _putchar(start++);
 putchar('\n');
 }
 
-/**
- * main - print _puchar on the command line
- * Return: 0
- */
-int main(void)
-{
-print_alphabet();
-return (0);
-}
+
