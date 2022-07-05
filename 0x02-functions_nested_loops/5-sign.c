@@ -7,10 +7,18 @@
 int print_sign(int c)
 {
 if (c > 0)
-return (1);
+{
+_putchar('+');
+return (1O);
+}
 else if (c < 0)
+{
+_putchar('-');
 return (-1);
-else 
+}
+else
+{
+_putchar(0); 
 return (0);
 }
-
+}
