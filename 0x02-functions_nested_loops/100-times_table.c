@@ -14,7 +14,7 @@ for (; i <= n; i++)
 {
 for (; j <= n; j++)
 {
-putchar((i * j) + '0');
+printf("%d", (i*j));
 if (j != 9)
 printf(", ");
 }
