@@ -17,12 +17,13 @@ printf("%d", (i * j));
 if (j != 9)
 printf(", ");
 }
+printf("\n");
 j = 0;
 }
 }
 int main() 
 {
-times_table()
+times_table();
 return (0);
 }
 
