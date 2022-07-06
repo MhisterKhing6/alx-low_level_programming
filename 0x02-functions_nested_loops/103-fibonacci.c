@@ -11,7 +11,6 @@ long first = 1;
 long second = 2;
 long current = 1;
 long sum = 2;
-int i = 1;
 while (current <= 4000000)
 {
 current = first + second;
