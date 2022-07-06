@@ -7,10 +7,10 @@
 */
 int main(void)
 {
-long long first = 1;
-long long second = 2;
-long long current = 0;
-long int i = 1;
+long first = 1;
+long second = 2;
+long current = 0;
+int i = 1;
 printf("%ld, %ld", first, second);
 for (; i <= 95; i++)
 {
