@@ -16,7 +16,7 @@ for (; j <= n; j++)
 {
 printf("%d", (i*j));
 if (j != n)
-printf(",  ");
+printf(",   ");
 }
 j = 0;
 printf("\n");
