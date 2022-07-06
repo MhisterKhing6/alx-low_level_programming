@@ -26,11 +26,11 @@ _putchar(k + '0');
 _putchar(l + '0');
 _putchar('\n');
 }
+
 l = 0;
 }
 k = 0;
 }
-k = 0;
+j = 0;
 }
 }
-
