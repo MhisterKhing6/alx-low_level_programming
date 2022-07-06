@@ -20,4 +20,9 @@ printf(", ");
 j = 0;
 }
 }
+int main() 
+{
+times_table()
+return (0);
+}
 
