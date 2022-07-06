@@ -13,7 +13,7 @@ for (; i <= 9; i++)
 {
 for (; j <= 9; j++)
 {
-putchar((i * j) + '0');
+printf("%d", (i*j));
 if (j != 9)
 printf(", ");
 }
