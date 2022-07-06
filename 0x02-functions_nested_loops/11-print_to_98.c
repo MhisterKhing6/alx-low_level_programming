@@ -8,21 +8,27 @@
 */
 void print_to_98(int c)
 {
-if (c < 98)
-{
+if (c <= 98)
 while (c < 98)
 {
-_putchar(c++ + '0');
-_putchar(',');
-_putchar(' ');
-}
-}
-else
-while (c >= 98)
+printf("%d", c++);
 {
-_putchar(c-- + '0');
-_putchar(',');
-_putchar(' ');
+printf(",");
+printf(" ");
 }
 }
+
+else
+while (c > 98)
+{
+printf("%d", c--);
+
+printf(",");
+printf(" ");
+}
+
+printf("98");
+printf("\n");
+}
+
 
