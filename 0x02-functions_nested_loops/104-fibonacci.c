@@ -19,6 +19,7 @@ printf(", %ld", current);
 first = second;
 second = current;
 }
+printf("\n");
 return (0);
 }
 
