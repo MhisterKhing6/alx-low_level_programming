@@ -7,7 +7,7 @@
  * @c : integer to add
  * @b : Integer to add
 */
-void add(int c, int b)
+int add(int c, int b)
 {
 return (c + b);
 }
