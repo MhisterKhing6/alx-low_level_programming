@@ -15,7 +15,7 @@ for (; i <= n; i++)
 for (; j <= n; j++)
 {
 printf("%d", (i*j));
-if (j != 9)
+if (j != n)
 printf(",  ");
 }
 j = 0;
