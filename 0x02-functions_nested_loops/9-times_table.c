@@ -13,9 +13,11 @@ for (; i <= 9; i++)
 {
 for (; j <= 9; j++)
 {
-printf("%d", (i*j));
+/*printf("%d", (i*j));*/
+_putchar((j*i)  + '0');
 if (j != 9)
-printf(", ");
+/*printf(", ");*/
+_putchar("\n");
 }
 j = 0;
 printf("\n");
