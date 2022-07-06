@@ -12,7 +12,7 @@ long second = 2;
 long current = 0;
 int i = 1;
 printf("%ld, %ld", first, second);
-for (i ; i <= 48 ; i++)
+for (; i <= 48 ; i++)
 {
 current = first + second;
 printf(", %ld", current);
