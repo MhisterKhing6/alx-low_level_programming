@@ -13,14 +13,11 @@ for (; i <= 9; i++)
 {
 for (; j <= 9; j++)
 {
-/*printf("%d", (i*j));*/
-_putchar((j*i)  + '0');
+printf("%d", (i * j));
 if (j != 9)
-/*printf(", ");*/
-_putchar("\n");
+printf(", ");
 }
 j = 0;
-printf("\n");
 }
 }
 
