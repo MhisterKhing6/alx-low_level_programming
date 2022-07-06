@@ -7,10 +7,10 @@
 */
 int main(void)
 {
-long long first = 1;
-long long second = 2;
-long long current = 1;
-long long sum = 2;
+long first = 1;
+long second = 2;
+long current = 1;
+long sum = 2;
 int i = 1;
 while (current <= 4000000)
 {
@@ -20,7 +20,7 @@ sum += current;
 first = second;
 second = current;
 }
-printf("%d\n", sum);
+printf("%ld\n", sum);
 return (0);
 }
 
