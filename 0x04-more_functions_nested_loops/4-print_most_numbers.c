@@ -10,10 +10,9 @@ void print_most_numbers(void)
 int start = 0;
 while (start <= 9)
 {
-if (!(start == 2 || start == 4)
-_putchar(star + '0');
+if (!(start == 2 || start == 4))
+putchar(start + '0');
 start++;
 }
-_putchar('\n');
+putchar('\n');
 }
-
