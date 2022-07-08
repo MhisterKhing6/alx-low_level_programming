@@ -14,6 +14,6 @@ if (!(start == 2 || start == 4)
 _putchar(star + '0');
 start++;
 }
-putchar('\n');
+_putchar('\n');
 }
 
