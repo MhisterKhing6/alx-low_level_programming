@@ -18,7 +18,7 @@ else if (start % 5 == 0)
 printf("Buzz");
 else
 printf("%d", start);
-/*if (start != 100)*/
+if (start != 100)
 printf(" ");
 }
 printf("\n");
