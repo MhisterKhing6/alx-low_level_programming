@@ -2,7 +2,7 @@
 #define MAIN
 
 #include <unistd.h>
-
+void more_numbers(void);
 int _putchar(char c);
 void print_alphabet(void);
 void print_alphabet_x10(void);
@@ -18,7 +18,13 @@ void jack_bauer(void);
 void times_table(void);
 void print_times_table(int n);
 int _isupper(int c);
-int _isdigit(int c);
-int mul(int c, int d);
+int _isdigit(int n);
+int mul(int a, int b);
+void print_most_numbers(void);
+void print_numbers(void);
+void print_line(int n);
+void print_square(int n);
+void print_diagonal(int n);
+void print_triangle(int size);
 #endif
 

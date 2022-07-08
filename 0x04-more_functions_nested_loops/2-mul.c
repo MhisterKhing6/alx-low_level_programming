@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include "main.h"
-#include <ctype.h>
 /**
- * _isdigit - check if a string is lower and returns it'
- * @c : the character to check
- * Return: 1 is c is lower else 0
+ * mul - multiply number'
+ * @a :  number to check
+ * @b :  number to multiply
+ * Return: a*b;
 */
-int _isdigit(int c)
+int mul(int a, int b)
 {
-return (isdigit(c));
+return (a * b);
 }
 
 
