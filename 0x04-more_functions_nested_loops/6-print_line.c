@@ -8,8 +8,13 @@
  */
 void print_line(int n)
 {
-while (n-- > 0)
-putchar('-');
+int i = 1;
+if (n == 0)
+{
+putchar('\n');
+return;
+}
+for (; i <= n; i++)
+putchar('_');
 putchar('\n');
 }
-
