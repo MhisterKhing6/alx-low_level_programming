@@ -11,8 +11,7 @@ for (; i < 10; i++)
 {
 int start = 0;
 while (start <= 14)
-_putchar(start++);
-_putchar('\n');
+printf("%d", start++);
+putchar('\n');
 }
 }
-
