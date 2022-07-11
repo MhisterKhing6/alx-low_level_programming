@@ -3,6 +3,7 @@
 
 
 #include <stdio.h>
+void puts_half(char *);
 void put2(char *);
 void print_rev(char *);
 int _strlen(char *);

@@ -7,7 +7,7 @@
  */
 void puts_half(char *n)
 {
-unsigned long i = strlen(n) % 2 == 0 ? strlen(n) / 2 : (strlen(n) - 1) / 2;
+unsigned long i = strlen(n) % 2 == 0 ? (strlen(n) / 2) - 1 : (strlen(n) - 1) / 2;
 while (i < strlen(n))
 putchar(n[i++]);
 putchar('\n');
