@@ -14,9 +14,3 @@ putchar(s[i]);
 }
 putchar('\n');
 }
-int main()
-{
-char * s = "Howareyou";
-puts2(s);
-return 0;
-}
