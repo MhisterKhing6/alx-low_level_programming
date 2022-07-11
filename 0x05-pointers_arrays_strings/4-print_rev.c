@@ -14,6 +14,5 @@ i = i - 1;
 
 while (i >= 0)
 putchar(n[i--]);
-putchar('\n');
 }
 
