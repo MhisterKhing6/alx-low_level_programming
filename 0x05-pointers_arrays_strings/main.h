@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-
+int _atoi(char *);
 #include <stdio.h>
 void puts_half(char *);
 void put2(char *);
