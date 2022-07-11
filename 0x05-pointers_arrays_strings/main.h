@@ -2,6 +2,7 @@
 #define MAIN_H
 
 #include <stdio.h>
+int _strlen(char *);
 void swap_int(int *a, int *b);
 void positive_or_negative(int i);
 void reset_to_98(int *n);
