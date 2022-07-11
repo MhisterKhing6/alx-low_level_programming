@@ -2,6 +2,7 @@
 #define MAIN_H
 
 #include <stdio.h>
+void print_rev(char *);
 int _strlen(char *);
 void swap_int(int *a, int *b);
 void positive_or_negative(int i);
