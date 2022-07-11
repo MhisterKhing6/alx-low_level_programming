@@ -7,7 +7,7 @@
  * @src: a holder to copy string from
  * Return: returns a pointer to the copied folder
  */
-char * _strcpy(char *dest , char* src)
+char  *_strcpy(char *dest, char *src)
 {
-return strcpy(dest,src);
+return (strcpy(dest, src));
 }
