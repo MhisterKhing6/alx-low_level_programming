@@ -12,7 +12,8 @@ while (*(n + i++) != stop)
 {};
 i = i - 1;
 
-while (i >= 0)
+while (i > 0)
 putchar(n[i--]);
+putchar('\n');
 }
 
