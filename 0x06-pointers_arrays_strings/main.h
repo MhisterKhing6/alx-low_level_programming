@@ -3,6 +3,7 @@
 char * _strncat(char * , char * , int);
 int _atoi(char *);
 #include <stdio.h>
+char * _strncpy(char *, char *, int);
 void puts_half(char *);
 void put2(char *);
 void print_rev(char *);
