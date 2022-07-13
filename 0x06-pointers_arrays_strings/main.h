@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 char * _strncat(char * , char * , int);
+int _strcmp(char * , char *);
 int _atoi(char *);
 #include <stdio.h>
 char * _strncpy(char *, char *, int);
