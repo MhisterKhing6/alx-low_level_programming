@@ -1,5 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
+void print_number(int);
 char * _strncat(char * , char * , int);
 char * string_toupper(char *);
 void reverse_array(int * a , int n);
