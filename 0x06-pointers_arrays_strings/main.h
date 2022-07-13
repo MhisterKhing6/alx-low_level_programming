@@ -1,6 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
-
+char * _strncat(char * , char * , int);
 int _atoi(char *);
 #include <stdio.h>
 void puts_half(char *);

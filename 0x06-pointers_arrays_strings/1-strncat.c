@@ -2,12 +2,13 @@
 #include "main.h"
 #include <string.h>
 /**
- * _strcat - print strings to the console
+ * _strncat - print strings to the console
  * @dest: a holder to contained the copied file
  * @src: a holder to copy string from
+ * @n : number of strinc to cat
  * Return: returns a pointer to the copied folder
  */
-char  *_strcat(char *dest, char *src)
+char  *_strncat(char *dest, char *src, int n)
 {
-return (strcat(dest, src));
+return (strncat(dest, src, n));
 }
