@@ -10,12 +10,6 @@
  */
 char  * string_toupper(char *dest)
 {
-return (strupr(dest));
-}
-
-int main()
-{
-char * how = "how lhaoisoslk lk";
-how = string_toupper(how);
-return 0;
+strupr(dest);
+return (dest);
 }
