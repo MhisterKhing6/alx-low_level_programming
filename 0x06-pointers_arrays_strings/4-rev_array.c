@@ -9,7 +9,7 @@
 
 void reverse_array(int *a, int n)
 {
-int rev[n];
+int * rev = a;
 int i = n - 1;
 int j = 0;
 for (; i >= 0; i--)
