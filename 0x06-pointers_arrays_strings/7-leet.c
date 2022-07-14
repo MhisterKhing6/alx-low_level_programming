@@ -3,7 +3,7 @@
 #include "main.h"
 #include <string.h>
 /**
- * string_toupper - print strings to the console
+ * leet - print strings to the console
  * @dest: a holder to contained the copied file
  * Return: returns a pointer to the copied folder
  */

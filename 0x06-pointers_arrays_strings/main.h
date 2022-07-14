@@ -1,5 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
+char* leet(char* );
 char* cap_string(char *);
 void print_number(int);
 char * _strncat(char * , char * , int);
