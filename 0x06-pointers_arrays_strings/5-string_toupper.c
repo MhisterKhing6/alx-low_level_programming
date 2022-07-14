@@ -3,13 +3,18 @@
 #include "main.h"
 #include <string.h>
 /**
- * _strcpy - print strings to the console
+ * string_toupper - print strings to the console
  * @dest: a holder to contained the copied file
- * @src: a holder to copy string from
  * Return: returns a pointer to the copied folder
  */
-char  * string_toupper(char *dest)
+char  *string_toupper(char *dest)
 {
-strupr(dest);
+int size = strlen(dest);
+int i = 0;
+for (; i < size; i++)
+{
+if (dest[i] >= 'a' && dest[i] <= 'z')
+dest[i] -= 32;
+}
 return (dest);
 }
