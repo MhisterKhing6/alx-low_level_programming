@@ -7,7 +7,7 @@
  * @dest: a holder to contained the copied file
  * Return: returns a pointer to the copied folder
  */
-char *root13(char *dest)
+char *rot13(char *dest)
 {
 int size = strlen(dest);
 int i = 0;
