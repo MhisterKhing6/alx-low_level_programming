@@ -7,19 +7,19 @@
  * @size: the size of the string
  */
 
-void print_diagsums(int a[][], int size)
+void print_diagsums(int *a, int size)
 {
 int i = 0;
-int j = 0;
+int rev = size - 1;
+int re = rev;
 int sum = 0;
-for (; i < size, i++)
+int sum1 = 0;
+int multiple = size + 1;
+for (; i < size; i++)
 {
-for (; j < size; j++)
-{
-if (i == j)
-sum += a[i][j];
+sum += a[multiple * i];
+sum1 += a[rev];
+rev += re;
 }
-j = i;
-}
-printf("%d", sum);
+printf("%d, %d\n", sum, sum1);
 }
