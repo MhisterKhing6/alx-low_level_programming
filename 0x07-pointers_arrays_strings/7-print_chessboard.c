@@ -6,15 +6,15 @@
  * @a: A string to print
  */
 
-void print_chessboard(char (*a)[8])
+void print_chessboard(char a[][8])
 {
-int row = 8;
+int row = sizeof(*a) / sizeof(a[0][0]);
 int coloumn = 8;
-int i = 0; 
+int i = 0;
 int j = 0;
 for (; i < row; i++)
 {
-for(; j < coloumn; j++)
+for (; j < coloumn; j++)
 putchar(a[i][j]);
 if (i != 7)
 putchar('\n');
