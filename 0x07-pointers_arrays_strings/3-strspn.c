@@ -8,7 +8,7 @@
  * Return: the value of  s
  */
 
-unsigned int  *_strspn(char *s, char *b)
+unsigned int  _strspn(char *s, char *b)
 {
 return (strspn(s, b));
 }
