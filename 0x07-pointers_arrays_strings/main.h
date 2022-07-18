@@ -1,5 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
+char * _memcpy(char * , char * , unsigned int);
 char *_memset(char * , char , unsigned int);
 char* leet(char* );
 char* cap_string(char *);
