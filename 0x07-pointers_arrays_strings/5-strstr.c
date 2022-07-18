@@ -8,8 +8,14 @@
  * Return: the value of  s
  */
 
-char *_strstr(char *s, char *b)
+void print_chessboard(char (*a)[8])
 {
-return (strstr(s, b));
-}
 
+}
+int main()
+{
+int a[20][30];
+int k = sizeof(a) / sizeof(a[1]);
+printf("%d" ,k);
+return 0;
+}
