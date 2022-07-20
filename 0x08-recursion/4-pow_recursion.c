@@ -12,5 +12,5 @@
 
 int _pow_recursion(int n, int b)
 {
-return (int) (pow(n, b));
+return (int) (pow((double) n, (double) b));
 }
