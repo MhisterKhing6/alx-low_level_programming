@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 #include "main.h"
 /**
  * _pow_recursion- calculate the factorial of a number
@@ -11,5 +12,5 @@
 
 int _pow_recursion(int n, int b)
 {
-return (pow(n, b));
+return (int) (pow(n, b));
 }
