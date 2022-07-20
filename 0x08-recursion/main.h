@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 int factorial(int);
-int pow_recursion(int, int);
+int _pow_recursion(int, int);
 int _strlen_recursion(char *);
 void _print_rev_recursion(char *);
 void print_chessboard(char (*a)[8]);
