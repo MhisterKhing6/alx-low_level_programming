@@ -10,13 +10,11 @@
 
 void _puts_recursion(char *s)
 {
-static unsigned int  index = 0;
-if (index == strlen(s))
+if (s == (s + strlen(s)))
 {
 putchar('\n');
-index = 0;
 return;
 }
-putchar(s[index++]);
+putchar(*(s++));
 _puts_recursion(s);
 }
