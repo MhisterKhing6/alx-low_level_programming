@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include "main.h"
 /**
  * _puts_recursion - files first n values of a buffer with char
  * @s: A buffer to fill
@@ -9,7 +10,7 @@
 
 void _puts_recursion(char *s)
 {
-int static index = 0;
+static unsigned int  index = 0;
 if (index == strlen(s))
 {
 putchar('\n');
