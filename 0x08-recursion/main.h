@@ -1,6 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
-int _strlen_recursion.c
+int _strlen_recursion(char *);
 void _print_rev_recursion(char *);
 void print_chessboard(char (*a)[8]);
 void _puts_recursion(char *);
