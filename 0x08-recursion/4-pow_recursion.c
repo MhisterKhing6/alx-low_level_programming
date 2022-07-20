@@ -12,5 +12,7 @@
 
 int _pow_recursion(int n, int b)
 {
-return (int) (pow((double) n, (double) b));
+if (b = 0)
+return 0;
+return n + (--b);
 }
