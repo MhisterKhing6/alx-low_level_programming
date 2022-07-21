@@ -12,7 +12,9 @@
 
 int _pow_recursion(int n, int b)
 {
-if (b <= 0)
+if (b < 0)
+return (-1);
+if (b == 0)
 return (1);
 return (n  * _pow_recursion(n, --b));
 }
