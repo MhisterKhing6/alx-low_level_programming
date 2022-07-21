@@ -12,6 +12,6 @@ void _print_rev_recursion(char *s)
 {
 int size = strlen(s) - 1;
 while (size >= 0)
-putchar(s[i--]);
+putchar(s[size--]);
 putchar('\n');
 }
