@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "main.h"
+#include <math.h>
 /**
  * factorial- calculate the factorial of a number
  * @n: a number to calculate the factorial
@@ -15,5 +16,5 @@ return (-1);
 else
 if (n == 0)
 return (1);
-return (n * factorial(n - 1));
+return (int) (n * factorial(n - 1));
 }
