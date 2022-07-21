@@ -10,12 +10,8 @@
 
 void _print_rev_recursion(char *s)
 {
-s += (strlen(s) - 1);
-if (s == (s -  strlen(s) - 1 ))
-{
+int size = strlen(s) - 1;
+while (size >= 0)
+putchar(s[i--]);
 putchar('\n');
-return;
-}
-putchar(*s);
-_print_rev_recursion(--s);
 }
