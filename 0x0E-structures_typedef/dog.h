@@ -1,5 +1,5 @@
-#ifndef DOG_H
-#define DOG_H
+#ifndef DOG_H_
+#define DOG_H_
 /**
  * struct dog- Provde template for a dog  name, age, owner
  * @name : nam of the dog
