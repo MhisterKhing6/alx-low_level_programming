@@ -1,23 +1,23 @@
 #include "lists.h"
 
 /**
- * free_listint2 - free the heap occupied by the structure
- * @head: heap adddrees to free
- * Return: Nothing
+ * free_listint2 - function that frees a listint_t list.
+ * @head: double pointer to the list
+ * Return: Always success
  */
 
 void free_listint2(listint_t **head)
 {
-listint_t *temp = *head;
-listint_t *start = *head;
-if (head == NULL)
-return;
+	listint_t *new;
 
-while (start != NULL)
-{
-start = temp->next;
-free(temp);
-temp = start;
+	if (head == NULL)
+		return;
+	while (*head != NULL)
+	{
+		new = (*head)->next;
+		free(*head);
+		*head = new;
+	}
 }
-&head = NULL;
-}
+Footer
+
