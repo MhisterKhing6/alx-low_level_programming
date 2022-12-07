@@ -1,6 +1,6 @@
 #Create executable 
-SRC := main.c school.c
-CC  := gcc
+SRC = main.c school.c
+CC  = gcc
 all: $(SRC)
 	$(CC) $(SRC) -o school
 	
