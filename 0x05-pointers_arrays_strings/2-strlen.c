@@ -1,15 +1,17 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
- * _strlen - reset a value to 98
- * @n: a parameter to reset
- * Return: return the lenght of the string
+ * _strlen - function that returns the length of a string
+ * @s: parameter
+ * Description: Function that returns the length of a string
+ * Return: the length of the string
  */
-int _strlen(char *n)
+
+int _strlen(char *s)
 {
-char stop = '\0';
-int i = 0;
-while (*(n + i++) != stop)
-{};
-return (i - 1);
+	int b = 0;
+
+	while (*s++)
+		b++;
+	return (b);
 }

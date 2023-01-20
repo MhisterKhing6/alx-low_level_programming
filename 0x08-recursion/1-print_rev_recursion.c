@@ -1,18 +1,16 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
 #include "main.h"
+
 /**
- * _print_rev_recursion - files first n values of a buffer with char
- * @s: A buffer to fill
- * Return: the value of  s
+ * _print_rev_recursion - function that print a string in reverse
+ * @s: the string pointer
+ * Return: Always 0
  */
 
 void _print_rev_recursion(char *s)
 {
-if (*s)
-{
-_print_rev_recursion(s + 1);
-putchar(*s);
-}
+	if (*s > '\0')
+	{
+		_print_rev_recursion(s + 1);
+		_putchar(*s);
+	}
 }

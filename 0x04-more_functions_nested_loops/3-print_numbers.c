@@ -1,15 +1,19 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * print_numbers- print alphabet in lower case'
- * return 0
+ * print_numbers - prints 0123456789\n
+ *
+ * Return: void
  */
+
+
 void print_numbers(void)
 {
-int start = 0;
-while (start <= 9)
-_putchar(start++ + '0');
-putchar('\n');
-}
+	char c;
 
+	for (c = '0'; c <= '9'; c++)
+	{
+		_putchar(c);
+	}
+	_putchar('\n');
+}

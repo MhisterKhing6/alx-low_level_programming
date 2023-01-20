@@ -1,1 +1,1 @@
-Now into command line arguemnts
+0x0A. C - argc, argv

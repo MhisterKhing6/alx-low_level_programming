@@ -1,20 +1,36 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-#include <math.h>
 #include "main.h"
+
 /**
- * _sqrt_recursion- calculate the factorial of a number
- * @b: a number to raise the power to
- * @n: a number to calculate the factorial
- * Return: the calculated factorial of n
+ * _sqrt_recursion - function that returns natural square
+ * @n: int parameter
+ * Return: int
  */
 
-int _sqrt_recursion(int n, int b = 1;)
+int _sqrt_recursion(int n)
 {
-if ( b*b > n)
-return (-1);
-if ((b * b == n )  0)
-return (1);
-return _sqrt_recursion(n, b++);
+	return (square(n, 1));
+}
+
+/**
+ * square - find the square root
+ * @n: int to find square root
+ * @val: square root
+ * Return: int
+ */
+
+int square(int n, int val)
+{
+	if (val * val == n)
+	{
+		return (val);
+	}
+	else
+	if (val * val < n)
+	{
+		return (square(n, val + 1));
+	}
+	else
+	{
+		return (-1);
+	}
 }

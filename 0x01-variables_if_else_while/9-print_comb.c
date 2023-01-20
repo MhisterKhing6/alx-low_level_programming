@@ -1,22 +1,23 @@
 #include <stdio.h>
-/**
- * main- print the alphabets in lower case
- * Return: 0
- */
 
+/**
+ * main - Prints all possible combinations of single-digit numbers.
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-int start = 0;
-while (start <= 9)
-{
-putchar(start + '0');
-if (start != 9)
-{
-putchar(',');
-putchar(' ');
-}
-++start;
-}
-putchar('\n');
-return (0);
+	int n;
+
+	for (n = 0 ; n < 10 ; n++)
+	{
+		putchar(n + '0');
+		if (n < 9)
+		{
+			putchar(',');
+			putchar(32);
+		}
+	}
+	putchar('\n');
+	return (0);
 }

@@ -1,30 +1,30 @@
-#include <stdio.h>
 #include "main.h"
-#include "string.h"
-/**
- * print_rev - print String in reverse order
- * @n: a parameter to reset
- */
-void rev_string(char *n)
-{
-char ss = ' ';
-char ends = ' ';
-int i = strlen(n) - 1;
-int start = 0;
-while (start <= i)
-{
-ends = *(n + i);
-ss  = *(n  + start);
-*(n + i--) = ss;
-*(n + start++) = ends;
-}
-}
 
-int main(void)
+/**
+ * rev_string - function that reverses a string
+ * @s: parameter
+ * Description: function that reverses a string
+ * Return: Always 0
+ */
+
+void rev_string(char *s)
 {
-char * t = "how";
-char * v = "Anna";
-int j = 0 ;
-rev_string(t);
-return 0;
+	int a, b, temp;
+
+	a = 0;
+	b = 0;
+
+	while (s[b] != '\0')
+	{
+		b++;
+	}
+
+	b--;
+
+	while (b > a)
+	{
+		temp = s[b];
+		s[b--] = s[a];
+		s[a++] = temp;
+	}
 }

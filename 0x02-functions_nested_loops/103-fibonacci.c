@@ -1,25 +1,24 @@
 #include <stdio.h>
-#include "main.h"
-#include <stdlib.h>
 /**
- * main- Print the times of n numbers'
- * Return: 0
-*/
+  * main - sum even fibonacci numbers under 4 million.
+  * Return: Nothing.
+  */
 int main(void)
 {
-long first = 1;
-long second = 2;
-long current = 1;
-long sum = 2;
-while (current <= 4000000)
-{
-current = first + second;
-if (current  % 2 == 0)
-sum += current;
-first = second;
-second = current;
-}
-printf("%ld\n", sum);
-return (0);
-}
+	unsigned long count, i, j, k, sums;
 
+	i = sums = 0;
+	j = 1;
+	for (count = 0; count < 50; count++)
+	{
+		k = i + j;
+		i = j;
+		j = k;
+		if (k % 2 == 0 && k < 4000000)
+		{
+			sums += k;
+		}
+	}
+	printf("%lu\n", sums);
+	return (0);
+}

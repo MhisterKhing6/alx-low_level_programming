@@ -1,14 +1,19 @@
 #include <stdio.h>
-/**
- * main- print the alphabets in lower case
- * Return: 0
- */
 
+/**
+ * main - Entry point
+ *
+ *
+ * Return: Always 0 (Sucess)
+ */
 int main(void)
 {
-int start = 0;
-while (start <= 9)
-putchar(start++ + '0');
-putchar('\n');
-return (0);
+	int num;
+
+	for (num = 0; num < 10; num++)
+		putchar((num % 10) + '0');
+
+	putchar('\n');
+
+	return (0);
 }

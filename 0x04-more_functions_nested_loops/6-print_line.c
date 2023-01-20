@@ -1,20 +1,20 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * print_line- print alphabet in lower case'
- * Return: 0
- * @n : number to print
+ * print_line - printing lines
+ * @n: number of times
+ *
+ * Return: void
  */
+
+
 void print_line(int n)
 {
-int i = 1;
-if (n == 0)
-{
-putchar('\n');
-return;
-}
-for (; i <= n; i++)
-putchar('_');
-putchar('\n');
+	int i;
+
+	for (i = 0; i < n; i++)
+	{
+		_putchar('_');
+	}
+	_putchar('\n');
 }

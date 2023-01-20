@@ -1,17 +1,26 @@
 #include <stdio.h>
+
 /**
- * main- print the alphabets in lower case
- * Return: 0
+ * main - Entry point
+ *
+ *
+ * Return: Always 0 (Sucess)
  */
 
 int main(void)
 {
-char start = 'a';
-char CapStart = 'A';
-while (start <= 'z')
-putchar(start++);
-while (CapStart <= 'Z')
-putchar(CapStart++);
-putchar('\n');
-return (0);
+	char c;
+
+	for (c = 'a' ; c <= 'z' ; c++)
+	{
+		putchar(c);
+
+	}
+
+	for (c = 'A' ; c <= 'Z' ; c++)
+	{
+		putchar(c);
+	}
+	putchar('\n');
+	return (0);
 }

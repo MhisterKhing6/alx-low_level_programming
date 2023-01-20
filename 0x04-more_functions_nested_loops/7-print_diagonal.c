@@ -1,27 +1,27 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * print_diagonal- print alphabet in lower case'
- * Return: 0
- * @n : parameter to print
+ * print_diagonal - printing lines diagonal
+ * @n: input variables
+ *
+ * Return: void
  */
+
 void print_diagonal(int n)
 {
-if (n == 0)
-{
-putchar('\n');
-return;
-}
-int i = 1;
-for (; i <= n; i++)
-{
-int k = i;
-while (k-- > 1)
-{
-putchar(' ');
-}
-putchar('\\');
-putchar('\n');
-}
+	int i, j;
+
+	if (n <= 0)
+	{
+		_putchar('\n');
+	}
+	for (i = 0; i < n; i++)
+	{
+		for (j = 0; j < i; j++)
+		{
+			_putchar(' ');
+		}
+		_putchar('\\');
+		_putchar('\n');
+	}
 }

@@ -1,22 +1,23 @@
-#ifndef DOG_H_
-#define DOG_H_
+#ifndef DOG_H
+#define DOG_H
+
 /**
- * struct dog- Provde template for a dog  name, age, owner
- * @name : nam of the dog
- * @age  : age of the dog
- * @owner: Owner of the dog
- * Description - Provide template for a dog,
- * name is a string, age is a float , owner is string
+ * struct dog - Structure information about dog
+ * @name: name of dog
+ * @age: integer
+ * @owner: owner of dog
  */
-struct dog
+
+typedef struct dog
 {
-char *name;
-float age;
-char *owner;
-};
-typedef struct dog dog_t;
+	char *name;
+	float age;
+	char *owner;
+} dog_t;
+
+int _putchar(char);
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
-dog_t *new_dog(char *, float, char *);
-void free_dog(dog_t *);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
 #endif

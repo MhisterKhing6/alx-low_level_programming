@@ -1,4 +1,3 @@
-#ifndef si
-#define si
+#ifndef SIZE
 #define SIZE 1024
 #endif

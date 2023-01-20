@@ -1,20 +1,25 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-#include <math.h>
 #include "main.h"
+
 /**
- * _pow_recursion- calculate the factorial of a number
- * @b: a number to raise the power to
- * @n: a number to calculate the factorial
- * Return: the calculated factorial of n
+ * _pow_recursion - function that returns power
+ * @x: natural number
+ * @y: exponent
+ * Return: the power
  */
 
-int _pow_recursion(int n, int b)
+int _pow_recursion(int x, int y)
 {
-if (b < 0)
-return (-1);
-if (b == 0)
-return (1);
-return (n  * _pow_recursion(n, --b));
+	if (y < 0)
+	{
+		return (-1);
+	}
+	else
+	if (y == 0)
+	{
+		return (1);
+	}
+	else
+	{
+		return (x * _pow_recursion(x, (y - 1)));
+	}
 }

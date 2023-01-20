@@ -1,36 +1,23 @@
-#include <stdio.h>
 #include "main.h"
-#include <stdlib.h>
+
 /**
- * jack_bauer- Print the absolute value of the number'
- * Return: 0
-*/
+ * jack_bauer - prints time table in this format: HH:MM
+ * Return: the sum of two numbers.
+ */
 void jack_bauer(void)
 {
-int i = 0;
-int j = 0;
-int k = 0;
-int l = 0;
-for (; i <= 2; i++)
-{
-for (; j <= 3; j++)
-{
-for (; k <= 5; k++)
-{
-for (; l <= 9; l++)
-{
-_putchar(i + '0');
-_putchar(j + '0');
-_putchar(':');
-_putchar(k + '0');
-_putchar(l + '0');
-_putchar('\n');
-}
+	int h, m;
 
-l = 0;
-}
-k = 0;
-}
-j = 0;
-}
+	for (h = 0; h < 24; h++)
+	{
+		for (m = 0; m < 60; m++)
+		{
+			_putchar((h / 10) + '0');
+			_putchar((h % 10) + '0');
+			_putchar(':');
+			_putchar((m / 10) + '0');
+			_putchar((m % 10) + '0');
+			_putchar('\n');
+		}
+	}
 }

@@ -1,14 +1,16 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
 #include "main.h"
+
 /**
- * _strlen_recursion- files first n values of a buffer with char
- * @s: A buffer to fill
- * Return: the value of  s
+ * _strlen_recursion - function that returns the length of a string
+ * @s: the string pointer
+ * Return: Always 0
  */
 
 int _strlen_recursion(char *s)
 {
-return (strlen(s));
+	if (*s == '\0')
+	{
+		return (0);
+	}
+	return (1 + _strlen_recursion(++s));
 }

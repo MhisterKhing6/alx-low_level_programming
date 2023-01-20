@@ -1,37 +1,35 @@
 #include <stdio.h>
-/**
- * main- print the alphabets in lower case
- * Return: 0
- */
 
+/**
+ * main - Entry point
+ *
+ *
+ * Return: Always 0 (Sucess)
+ */
 int main(void)
 {
-int firstDigit = 0;
-int control = 1;
-int secondDigit = control;
-int control2 = 2;
-int thirdDigit  = 2;
-for (; firstDigit < 8; ++firstDigit)
-{
-for (; secondDigit < 9; ++secondDigit)
-{
-for (; thirdDigit < 10; ++thirdDigit)
-{
-putchar(firstDigit + '0');
-putchar(secondDigit + '0');
-putchar(thirdDigit + '0');
-if (firstDigit != 7);
-{
-putchar(',');
-putchar(' ');
-}
-}
-thirdDigit = ++control2;
-}
-secondDigit = ++control;
-control2 = 2;
-thirdDigit = control2;
-}
-putchar('\n');
-return (0);
+	int digit1, digit2, digit3;
+
+	for (digit1 = 0; digit1 < 8; digit1++)
+	{
+		for (digit2 = digit1 + 1; digit2 < 9; digit2++)
+		{
+			for (digit3 = digit2 + 1; digit3 < 10; digit3++)
+			{
+				putchar((digit1 % 10) + '0');
+				putchar((digit2 % 10) + '0');
+				putchar((digit3 % 10) + '0');
+
+				if (digit1 == 7 && digit2 == 8 && digit3 == 9)
+					continue;
+
+				putchar(',');
+				putchar(' ');
+			}
+		}
+	}
+
+	putchar('\n');
+
+	return (0);
 }

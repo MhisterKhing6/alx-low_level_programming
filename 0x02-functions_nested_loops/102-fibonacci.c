@@ -1,25 +1,26 @@
 #include <stdio.h>
-#include "main.h"
-#include <stdlib.h>
 /**
- * main- Print the times of n numbers'
- * Return: 0
-*/
+  * main - print the first 50 fibonacci numbers.
+  * Return: Nothing.
+  */
 int main(void)
 {
-long first = 1;
-long second = 2;
-long current = 0;
-int i = 1;
-printf("%ld, %ld", first, second);
-for (; i <= 48 ; i++)
-{
-current = first + second;
-printf(", %ld", current);
-first = second;
-second = current;
-}
-printf("\n");
-return (0);
-}
+	unsigned long count, i, j, k;
 
+	i = 0;
+	j = 1;
+	for (count = 0; count < 50; count++)
+	{
+		k = i + j;
+		i = j;
+		j = k;
+		printf("%lu", k);
+		if (count == 49)
+			putchar('\n');
+		else
+		{
+			printf(", ");
+		}
+	}
+	return (0);
+}

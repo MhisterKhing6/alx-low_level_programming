@@ -1,34 +1,22 @@
-#include <stdio.h>
 #include "main.h"
-#include <stdlib.h>
+#include <stdio.h>
 /**
- * print_to_98- Print the absolute value of the number'
- * Return: 0
- * @c : integer to check abs value
-*/
-void print_to_98(int c)
+ * print_to_98 - print all natural numbers from n to 98.
+ * @n: the number to start counting from to 98
+ * Return: void returns nothing.
+ */
+void print_to_98(int n)
 {
-if (c <= 98)
-while (c < 98)
-{
-printf("%d", c++);
-{
-printf(",");
-printf(" ");
+	if (n < 98)
+	{
+		for (n = n; n < 98; n++)
+			printf("%d, ", n);
+		printf("%d\n", 98);
+	}
+	else
+	{
+		for (n = n; n > 98; n--)
+			printf("%d, ", n);
+		printf("%d\n", 98);
+	}
 }
-}
-
-else
-while (c > 98)
-{
-printf("%d", c--);
-
-printf(",");
-printf(" ");
-}
-
-printf("98");
-printf("\n");
-}
-
-

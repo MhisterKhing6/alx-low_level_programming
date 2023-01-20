@@ -1,12 +1,12 @@
-#include <stdlib.h>
 #include <stdio.h>
+
 /**
- * main -  Print the name of the program source file
- * Return: returns 0 after successul excution
+ * main - program that prints the name of the file it was compiled from
+ * Return: Alway 0
  */
+
 int main(void)
 {
-printf("%s", __FILE__);
-putchar('\n');
-return (0);
+	printf("%s\n", __FILE__);
+	return (0);
 }

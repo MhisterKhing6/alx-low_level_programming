@@ -1,9 +1,18 @@
+#include <stdlib.h>
+#include "dog.h"
+
 /**
- * free_dog - Release the dog heap memory
- * @d : location to release memory
- * Return: Nothing
+ * free_dog - frees the memory of dog struct.
+ * @d: dog struct
+ * Return: pointer to the new dog.
  */
+
 void free_dog(dog_t *d)
 {
-free(d);
+	if (!d)
+		return;
+
+	free(d->name);
+	free(d->owner);
+	free(d);
 }

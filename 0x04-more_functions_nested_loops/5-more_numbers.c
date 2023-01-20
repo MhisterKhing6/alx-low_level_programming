@@ -1,17 +1,24 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
- * more_numbers- print alphabet in lower case'
- * return 0
+ * more_numbers - nmbr fct
+ *
+ * Return: void
  */
+
 void more_numbers(void)
 {
-int i = 0;
-for (; i < 10; i++)
-{
-int start = 0;
-while (start <= 14)
-printf("%d", start++);
-putchar('\n');
-}
+
+	int i, j;
+
+	for (i = 1; i <= 10; i++)
+	{
+		for (j = 0; j < 15; j++)
+		{
+			if (j >= 10)
+				_putchar('1');
+			_putchar(j % 10 + '0');
+		}
+		_putchar('\n');
+	}
 }

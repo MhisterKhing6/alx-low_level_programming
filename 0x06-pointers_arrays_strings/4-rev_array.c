@@ -1,21 +1,23 @@
-#include <stdio.h>
 #include "main.h"
-#include "string.h"
+
 /**
- * reverse_array - print String in reverse order
- * @n: a parameter to reset
- * @a: a container
+ * reverse_array - function that reverses the content of an array of integers
+ * @a: an array of intergers
+ * @n: the number of elements to swap
+ * Return: nothing
  */
 
 void reverse_array(int *a, int n)
 {
+	int A = 0;
+	int temp;
 
-int rev[13];
-int i = n - 1;
-int j = 0;
-for (; i >= 0; i--)
-rev[j++] = a[i];
-j = 0;
-for (; j < n; j++)
-a[j] = rev[j];
+	n = n - 1;
+
+	while (n >= A)
+	{
+		temp = a[A];
+		a[A++] = a[n];
+		a[n--] = temp;
+	}
 }

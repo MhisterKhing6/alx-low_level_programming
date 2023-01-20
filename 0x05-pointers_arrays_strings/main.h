@@ -1,16 +1,12 @@
-#ifndef MAIN_H
-#define MAIN_H
-
-int _atoi(char *);
-#include <stdio.h>
-void puts_half(char *);
-void put2(char *);
-void print_rev(char *);
-int _strlen(char *);
-void swap_int(int *a, int *b);
-void positive_or_negative(int i);
+int _putchar(char c);
 void reset_to_98(int *n);
-int largest_number(int a, int b, int c);
-void print_remaining_days(int month, int day, int year);
-void print_array(int * , int );
-#endif /* MAIN_H */
+void swap_int(int *a, int *b);
+int _strlen(char *s);
+void _puts(char *str);
+void print_rev(char *s);
+void rev_string(char *s);
+void puts2(char *str);
+void puts_half(char *str);
+void print_array(int *a, int n);
+char *_strcpy(char *dest, char *src);
+int _atoi(char *s);

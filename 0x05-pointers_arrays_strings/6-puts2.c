@@ -1,16 +1,24 @@
-#include <stdio.h>
 #include "main.h"
-#include <string.h>
+
 /**
- * puts2 - print strings to the console
- * @s: String to print
+ * puts2 - function that prints every other character of a string
+ * @str: parameter
+ * Return: Always 0
  */
-void puts2(char *s)
+
+void puts2(char *str)
 {
-unsigned long i = 0;
-for (; i < strlen(s) ; i = i + 2)
-{
-putchar(s[i]);
-}
-putchar('\n');
+	int c = 0;
+
+	while (str[c] != '\0')
+	{
+		if (c % 2 == 0)
+		{
+			_putchar(str[c]);
+		}
+
+		c++;
+	}
+
+	_putchar('\n');
 }

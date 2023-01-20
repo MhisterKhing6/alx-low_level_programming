@@ -1,15 +1,11 @@
-#include <stdio.h>
 #include "main.h"
-#include <stdlib.h>
 /**
- * add- Print the absolute value of the number'
- * Return: 0
- * @c : integer to add
- * @b : Integer to add
-*/
-int add(int c, int b)
+ * add - adds two numbers together.
+ * @i: The first number to be added.
+ * @j: The second number to be added.
+ * Return: the sum of two numbers.
+ */
+int add(int i, int j)
 {
-return (c + b);
+	return (i + j);
 }
-
-

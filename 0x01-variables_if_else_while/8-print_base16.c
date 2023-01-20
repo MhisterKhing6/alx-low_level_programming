@@ -1,21 +1,25 @@
 #include <stdio.h>
+
 /**
- * main- print the alphabets in lower case
- * Return: 0
+ * main - Entry point
+ *
+ *
+ * Return: Always 0 (Sucess)
  */
 
 int main(void)
 {
-char start = 'a';
-int number = 0;
-while (number <= 15)
-{
-if (number > 9)
-putchar(start++);
-else
-putchar(number + '0');
-++number;
-}
-putchar('\n');
-return (0);
+	int num;
+
+	char letter;
+
+	for (num = 0; num < 10; num++)
+		putchar((num % 10) + '0');
+
+	for (letter = 'a'; letter <= 'f'; letter++)
+		putchar(letter);
+
+	putchar('\n');
+
+	return (0);
 }

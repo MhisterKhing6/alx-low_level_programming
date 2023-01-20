@@ -1,14 +1,22 @@
-#include <stdio.h>
 #include "main.h"
-#include "string.h"
+
 /**
- * puts_half - print String in reverse order
- * @n: a parameter to reset
+ * puts_half -  function that prints half of a string
+ * @str: parameter
+ * Decription: The function should print the second half of the string
  */
-void puts_half(char *n)
+
+void puts_half(char *str)
 {
-unsigned long i = strlen(n) % 2 == 0 ? (strlen(n) / 2)  : (strlen(n) - 1) / 2;
-while (i < strlen(n))
-putchar(n[i++]);
-putchar('\n');
+	int a;
+
+	for (a = 0; str[a] != '\0'; a++)
+		a++;
+
+	for (a /= 2; str[a] != '\0'; a++)
+	{
+		_putchar(str[a]);
+	}
+
+	_putchar('\n');
 }
