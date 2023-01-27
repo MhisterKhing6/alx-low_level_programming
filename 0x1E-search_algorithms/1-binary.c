@@ -29,26 +29,24 @@ printf("%d, ", array[j]);
  * @array: array to search for a value
  * @low: where array start from
  * @high: where arry ends
- * @value: value to search in array
+ * @x: value to search in array
  * Return: index of value or -1
  */
-int bin(int array[], size_t low, size_t high, int x) {
-  size_t mid;
-  while (low <= high) {
-    print_ar(array, low, high);
-    mid = low + (high - low) / 2;
-
-    if (array[mid] == x)
-      return mid;
-
-    if (array[mid] < x)
-      low = mid + 1;
-
-    else
-      high = mid - 1;
-  }
-
-  return -1;
+int bin(int array[], size_t low, size_t high, int x)
+{
+size_t mid;
+while (low <= high)
+{
+print_ar(array, low, high);
+mid = low + (high - low) / 2;
+if (array[mid] == x)
+return (mid);
+if (array[mid] < x)
+low = mid + 1;
+else
+high = mid - 1;
+}
+return (-1);
 }
 
 /**
