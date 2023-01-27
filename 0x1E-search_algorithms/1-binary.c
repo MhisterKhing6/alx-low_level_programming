@@ -9,8 +9,9 @@
  */
 void print_ar(int  *array, size_t low, size_t high)
 {
+size_t j = low;
 printf("Searching in array: ");
-for (size_t j = low; j <= high; j++)
+for (; j <= high; j++)
 {
 if (j == high)
 {
@@ -34,19 +35,20 @@ printf("%d, ", array[j]);
 
 int bin(int *array, size_t low, size_t high, int value)
 {
+size_t mid;
 print_ar(array, low, high);
-size_t mid = (low + high) / 2;
+mid = (low + high) / 2;
 if (array[mid] == value)
 return (mid);
 if (low > high || array == NULL)
 return (-1);
 if (value > array[mid])
 {
-bin(array, mid + 1, high, value);
+return (bin(array, mid + 1, high, value));
 }
 else
 {
-bin(array, low, mid - 1, value);
+return (bin(array, low, mid - 1, value));
 }
 }
 
