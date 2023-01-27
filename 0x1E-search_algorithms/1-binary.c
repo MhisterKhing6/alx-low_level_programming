@@ -32,26 +32,24 @@ printf("%d, ", array[j]);
  * @value: value to search in array
  * Return: index of value or -1
  */
+int bin(int array[], size_t low, size_t high, int x) {
+  size_t mid;
+  while (low <= high) {
+    print_ar(array, low, high);
+    mid = low + (high - low) / 2;
 
-int bin(int *array, size_t low, size_t high, int value)
-{
-size_t mid;
-print_ar(array, low, high);
-mid = (low + high) / 2;
-if (array[mid] == value)
-return (mid);
-if (low > high || array == NULL)
-return (-1);
-if (value > array[mid])
-{
-return (bin(array, mid + 1, high, value));
-}
-else
-{
-return (bin(array, low, mid - 1, value));
-}
-}
+    if (array[mid] == x)
+      return mid;
 
+    if (array[mid] < x)
+      low = mid + 1;
+
+    else
+      high = mid - 1;
+  }
+
+  return -1;
+}
 
 /**
  * binary_search - search for a value using binary search argorithm
